@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    background-color: #1a1a1a;
+    position: relative;
+       /* только горизонтальный скролл убираем */
+    min-height: 100vh;
+}
+
+/* Мягкое свечение сверху слева */
+body::before {
+    content: '';
+    position: fixed;
+    top: -20%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(
+        ellipse 100% 100% at 30% 20%,
+        rgba(100, 80, 180, 0.25),
+        rgba(120, 60, 200, 0.08) 40%,
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Второе мягкое пятно — справа/по центру, приглушённое */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: -10%;
+    right: -5%;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(
+        ellipse 80% 80% at 70% 80%,
+        rgba(0, 150, 236, 0.08),
+        transparent 55%
+    );
+    pointer-events: none;
+    z-index: 0;
+}

@@ -1,0 +1,717 @@
+
+
+.app {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 5rem;
+    border-bottom: 0.5px solid #d6d6d6;
+    
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6rem;
+    margin: 0 auto;
+    
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right top, #0cb2ec, #009def, #0085ef, #006be9, #154cdb);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 3rem;
+}
+
+.item {
+    color: #fff;
+    text-decoration: none;
+}
+
+.item:hover {
+    color: #0cb2ec;
+}
+
+.me {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 10rem auto 0;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10rem ;
+}
+
+.me-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.me-title {
+    font-size: 30px;
+    color: #ffff;
+}
+
+.me-text {
+    color: #ffff;
+    font-size: 22px;
+}
+
+.me-text--sub {
+    margin-top: 0.75rem;
+}
+
+.me-photo {
+    position: absolute;
+    top: -4rem;
+    left: 50rem;
+}
+.me-photo img {
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    /* 3D‑эффект: мягкая тень + цветное свечение */
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.65),              /* основная падающая тень вниз */
+        0 0 0 3px rgba(255, 255, 255, 0.08),          /* лёгкий обводящий "бордер" */
+        0 0 45px rgba(12, 178, 236, 0.4);             /* голубое свечение вокруг */
+}
+
+.order {
+    margin-top: 2rem;
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+    background-image: linear-gradient(to right top, #0cb2ec, #009def, #0085ef, #006be9, #154cdb);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    /* лёгкий 3D‑эффект под кнопкой */
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.08);
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 5rem;
+}
+        
+.order:hover {
+    opacity: 0.9;
+    transform: translateY(-1px) scale(1.02);
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.order:active {
+    opacity: 0.8;
+    transform: translateY(1px) scale(0.98);
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.portfolio {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 10rem;
+    
+}
+
+.portfolio-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.portfolio-screen {
+    margin-left: 3rem;
+}                   
+
+.portfolio-screen img {
+    width: 550px;
+    align-self: flex-start;
+    border-radius: 16px;
+    /* 3D‑эффект для "монитора" */
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.75),              /* глубокая тень под блоком */
+        0 0 0 2px rgba(255, 255, 255, 0.06),          /* лёгкий светлый кант */
+        0 -10px 35px rgba(21, 76, 219, 0.35);         /* холодное свечение сверху */
+}
+
+.descr {
+    margin-left: 8rem;
+    margin-bottom: 6rem;
+}
+
+.portfolio-title {
+    font-size: clamp(24px,1.77vw,34px);
+    font-weight: 700;
+    color: #ffff;
+    
+}
+
+.portfolio-text {
+    width:300px;
+    font-size: 16px;
+    color: #ffff;
+    margin-bottom: 2rem;
+    
+}
+
+.more {
+    margin-top: 5rem;
+    color:#009def
+}
+
+
+.accordion {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    top:13rem;
+    left: 45rem;
+}
+
+.accordion-btn {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    background: none;
+    border: none;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 16px;
+}
+.arrow.rotated {
+    rotate: 180deg;
+}
+
+.content {
+    color: #ffff;
+    margin-left: 1rem;
+    
+
+}
+
+
+.content.is-open {
+    display: flex;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-right: 18rem;
+    
+    
+}
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    
+    
+   
+    
+    
+}
+
+
+.gallery-item {
+    width: 280px;
+    height: 200px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-sizing: border-box;
+    
+}
+
+.footer {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 5rem;
+    border-top: 0.5px solid #d6d6d6;
+    margin-top: 10rem;
+    
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 100%;
+}
+.footer-menu {
+    margin: 0 auto;
+}
+
+.footer-menu p {
+    width: 500px;
+    color: #ffff;
+    margin-left: 3rem;
+    opacity: 0.6;
+}
+
+/* Модалка «Отправить заявку» */
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: min(90vw, 22rem);
+    max-width: 22rem;
+    padding: 2rem 1.75rem 1.75rem;
+    box-sizing: border-box;
+    background: linear-gradient(165deg, #1e1e2e 0%, #16162a 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.04),
+        0 0 60px rgba(12, 178, 236, 0.08);
+}
+
+.modal .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    left: auto;
+}
+
+.modal .modal-close img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.modal .modal-close:hover img {
+    opacity: 1;
+    transform: translateY(-2px);
+    filter: drop-shadow(0 0 8px rgba(12, 178, 236, 0.7));
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0.5rem 0 0;
+}
+
+.modal-form h1 {
+    margin: 0 0 0.25rem;
+    padding: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.modal-form input {
+    width: 100%;
+    max-width: 280px;
+    height: 48px;
+    margin: 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.modal-form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-form input:focus {
+    border-color: rgba(12, 178, 236, 0.6);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 0 3px rgba(12, 178, 236, 0.15);
+}
+
+.modal-form button {
+    width: 100%;
+    max-width: 280px;
+    height: 48px;
+    margin: 0.25rem 0 0;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0cb2ec 0%, #006be9 100%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 20px rgba(12, 178, 236, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.modal-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(12, 178, 236, 0.45);
+    opacity: 0.95;
+}
+
+.modal-form button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 12px rgba(12, 178, 236, 0.3);
+}
+
+html.noscroll,
+body.noscroll {
+    overflow: hidden;
+}
+
+/* Модалка контактов — в одном стиле с модалкой заявки */
+.contacts-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.contacts-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: min(90vw, 22rem);
+    max-width: 22rem;
+    min-height: 12rem;
+    padding: 2rem 1.75rem 1.75rem;
+    box-sizing: border-box;
+    background: linear-gradient(165deg, #1e1e2e 0%, #16162a 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.04),
+        0 0 60px rgba(12, 178, 236, 0.08);
+}
+
+.contacts-modal .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    left: auto;
+}
+
+.contacts-modal .modal-close img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.contacts-modal .modal-close:hover img {
+    opacity: 1;
+    transform: translateY(-2px);
+    filter: drop-shadow(0 0 8px rgba(12, 178, 236, 0.7));
+}
+
+.contacts-modal .modal-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contacts-modal .modal-container h1 {
+    margin: 0 0 0.25rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.contacts-modal .modal-item {
+    display: inline-flex;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.2s ease, filter 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contacts-modal .modal-item:hover {
+    transform: scale(1.08);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 20px rgba(12, 178, 236, 0.2);
+    filter: drop-shadow(0 0 10px rgba(12, 178, 236, 0.4));
+}
+
+.contacts-modal .modal-item img {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+
+/* ===== Планшет (до 1024px) ===== */
+@media (max-width: 1024px) {
+    .menu {
+        gap: 2rem;
+    }
+
+    .header-logo {
+        margin-left: 1.5rem;
+    }
+
+    .me {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .me-photo {
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .me-photo img {
+        width: 180px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio-screen {
+        margin-left: 1.5rem;
+    }
+
+    .portfolio-screen img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .descr {
+        margin-left: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .accordion {
+        position: static;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .gallery {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .footer-menu p {
+        margin-left: 1.5rem;
+        width: auto;
+    }
+    .order {
+        margin-left: 3rem;
+    }
+}
+
+/* ===== Телефон (до 480px) ===== */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .header {
+        height: 4rem;
+    }
+
+    .header-container {
+        margin-top: 0.5rem;
+    }
+
+    .header-logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .item {
+        font-size: 0.85rem;
+    }
+
+    .me {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .me-title {
+        font-size: 22px;
+    }
+
+    .me-text {
+        font-size: 16px;
+    }
+
+    .me-photo {
+        position: static;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .me-photo img {
+        width: 150px;
+    }
+
+    .order {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .portfolio {
+        margin-bottom: 5rem;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio-screen {
+        margin-left: 1rem;
+    }
+
+    .portfolio-screen img {
+        width: calc(100vw - 2rem);
+        max-width: 100%;
+    }
+
+    .descr {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-title {
+        font-size: 20px;
+    }
+
+    .portfolio-text {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .accordion {
+        position: static;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .accordion-btn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .gallery {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .gallery-container {
+        gap: 0.75rem;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 180px;
+    }
+
+    .footer {
+        margin-top: 5rem;
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    .footer-menu p {
+        margin-left: 1rem;
+        width: auto;
+        font-size: 0.8rem;
+    }
+}
